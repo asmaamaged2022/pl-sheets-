@@ -3,7 +3,7 @@ int check(int x[], int size)
 {
     for (int i = 1; i < size; i++)
     {
-        if (x[0] > x[i])
+        if (x[i-1] > x[i])
             return 1;
     }
     return 2;
