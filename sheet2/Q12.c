@@ -5,12 +5,12 @@ void checke(int x[][r], int size)
     int flag = 0;
     for (int i = 0; i < size; i++)
     {
-        for (int j = 0; j < size; j++)
+        for (int j = 0; j < r; j++)
             scanf("%d", &x[i][j]);
     }
     for (int i = 0; i < size; i++)
     {
-        for (int j = 0; j < size; j++)
+        for (int j = 0; j < r; j++)
             if (x[i][j] == x[j][i])
                 flag++;
     }
